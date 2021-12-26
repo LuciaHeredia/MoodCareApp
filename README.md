@@ -1,6 +1,7 @@
 # MoodCareApp
 
-Description: <br />
+## App description:
+<img src = "AppPictures/entry page.PNG">
 
 ## App created with:
 * Android version: 11
