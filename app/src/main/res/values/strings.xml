@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">MoodCare</string>
+    <string name="next_button">NEXT</string>
+    <string name="continue_string">CONTINUE</string>
+    <string name="welcome">Welcome to</string>
+    <string name="moodcare">MOODCARE</string>
+    <string name="sign">SIGN IN</string>
+    <string name="log">LOG IN</string>
+    <string name="forgot">Forgot your password?</string>
+    <string name="res">RESET PASSWORD</string>
+    <string name="enter_button">ENTER</string>
+    <string name="enter_email">Enter Email:</string>
+    <string name="enter_password">Enter Password:</string>
+    <string name="enter_firstName">Enter First Name:</string>
+    <string name="enter_lastName">Enter Last Name:</string>
+    <string name="enter_dof">Enter Date of Birth:</string>
+    <string name="star">*</string>
+    <string name="starMust">* Must be filled.</string>
+    <string name="passText">Password must contain 8 characters or more.</string>
+    <string name="save_button">SAVE</string>
+    <string name="intro_text1">Sometimes it’s hard for us to explain feelings
+                            and know exactly what is the thing\n
+                            that makes us feel that way.\n\n</string>
+    <string name="tiny_moodcare">MOODCARE</string>
+    <string name="intro_text2">lets you rate your daily activities</string>
+    <string name="intro_text3">and look for patterns that affect your mood.\n\n
+                            It allows you to make reflection a daily habit,
+                            discover what makes you happy\n
+                            or sad and depressed,\n
+                            eventually empowering you with actual statistics
+                            to make a change\n
+                            for a better mental health.</string>
+    <string name="intro_text4">GET READY TO:</string>
+    <string name="intro_text5">Report at any time regarding your moods,\n
+                                connecting it to an activity and following\n
+                                by adding notes.</string>
+    <string name="intro_text6">Travel back in time and review all the reports\n
+                                of a specific month or another date.</string>
+    <string name="intro_text7">Based on a specific mood or activity\n
+                                of your chosen,\n
+                                you’ll be able to see reports regarding it.</string>
+    <string name="intro_text8">For motivation,\n
+                                a daily uplifting quote will be visible.</string>
+    <string name="calendar_text">Choose a day/month for Daily/Monthly report:</string>
+    <string name="report">Report</string>
+    <string name="archive">archive</string>
+    <string name="todo">TODO</string>
+
+    <string name="bar_new_entry">New Entry</string>
+    <string name="bar_search">Search</string>
+    <string name="bar_home">Home</string>
+    <string name="today_entries">Today\'s entries:</string>
+    <string name="daily_quote">Daily quote:</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="mood">Mood</string>
+    <string name="activity">Activity</string>
+    <string name="byDefault">Default</string>
+    <string name="search_by">Search by:</string>
+
+    <string name="choose_mood">Choose mood to review:</string>
+    <string name="show_me">SHOW ME</string>
+    <string name="choose_activity">Choose activity to review:</string>
+    <string name="today">TODAY</string>
+    <string name="yesterday">YESTERDAY</string>
+    <string name="other_day">OTHER DAY</string>
+    <string name="choose_a_day">Choose a day:</string>
+    <string name="what_s_your_mood">What\'s your mood?</string>
+    <string name="what_s_the_activity">What\'s the activity that caused it?</string>
+    <string name="tell_us_more">Tell us more...</string>
+    <string name="date_format">00/00/0000</string>
+    <string name="time_format">00:00</string>
+    <string name="type_here">Type here...</string>
+    <string name="if_month_selected">If Month selected, choose a random day in calendar.</string>
+    <string name="change">change</string>
+    <string name="notes">notes</string>
+    <string name="null_txt">aaaaaaaa</string>
+
+    <!-- QUOTES -->
+    <string-array name="quotes_array">
+        <item>The harder you work for something, the greater you’ll feel when you achieve it.</item>
+        <item>Wake up with determination. Go to bed with satisfaction.</item>
+        <item>Do something today that your future self will thank you for.</item>
+        <item>Don\'t be upset when people reject you. Nice things are rejected all the time by people who can\'t afford them.</item>
+        <item>It\'s going to be hard, but hard does not mean impossible.</item>
+        <item>You can either experience the pain of discipline or the pain of regret. The choice is yours.</item>
+        <item>People who wonder if the glass is half empty or full miss the point. The glass is refillable.</item>
+        <item>Whenever you find yourself doubting how far you can go, just remember how far you have come.</item>
+        <item>Don\'t tell everyone your plans, instead show them your results.</item>
+        <item>Always be careful when you follow the masses. Sometimes the m is silent.</item>
+        <item>When Plan “A” does not work, don’t worry, you still have 25 more letters to go through.</item>
+        <item>At any given moment you have the power to say: this is not how the story is going to end.</item>
+        <item>A diamond is merely a lump of coal that did well under pressure.</item>
+        <item>When you know your worth, no one can make you feel worthless.</item>
+        <item>The key to success is to focus on goals, not obstacles.</item>
+        <item>Forget your excuses. You either want it bad or don’t want it at all.</item>
+        <item>When thinking about life, remember this: no amount of guilt can change the past and no amount of anxiety can change the future.</item>
+        <item>Never regret a day in your life. Good days bring you happiness and bad days give you experience.</item>
+        <item>If you are the smartest person in the room, you’re in the wrong room.</item>
+        <item>Be strong enough to let go and wise enough to wait for what you deserve.</item>
+        <item>Your mind is powerful. When you fill it with positive thoughts your whole world will change.</item>
+        <item>Stop being afraid of what can go wrong and start being positive about what can go right.</item>
+        <item>The difference between who you are and who you want to be is what you do.</item>
+        <item>Repeat: I will not erase all my hard work this week because it is the weekend.</item>
+        <item>You will never always be motivated, so you must learn to be disciplined.</item>
+        <item>Breakdowns can create breakthroughs. Things fall apart so things can fall together.</item>
+        <item>A bend in the road is not the end of the road, unless you fail to make the turn.</item>
+        <item>The stars are constantly shining, but often we do not see them until the dark hours.</item>
+        <item>Count the garden by the flowers, never by the leaves that fall. Count your life with smiles and not the tears that roll.</item>
+        <item>Keep your head and your heart going in the right direction and you will not have to worry about your feet.</item>
+        <item>Mistakes are a great educator when one is honest enough to admit them and willing to learn from them.</item>
+        <item>You can make the dream come true if you wake up and work.</item>
+        <item>Your dreams will come true if you can see it, if you believe in it, then you can achieve it.</item>
+        <item>You are on the road to success when you realize that failure is only a detour.</item>
+        <item>Don\'t be just another member of society, be a living example of your dreams and goals.</item>
+        <item>Failure is not the worst thing in the world, the very worst is not to try.</item>
+        <item>Remember that your failures are the seeds of your most glorious successes. Be sad if you must, but do not despair.</item>
+        <item>Those who can, do.\nThose who can not, criticize.</item>
+        <item>All of us could take a lesson from the weather, it pays no attention to criticism.</item>
+        <item>Many great ideas have been lost because the people who had them could not stand being laughed at.</item>
+        <item>Every tomorrow has two handles. We can take hold of it by the handle of anxiety, or by the handle of faith.</item>
+        <item>If you don\'t believe in yourself,\nchances are nobody else will.</item>
+        <item>If you don\'t get everything you want, think of the things you don\'t get that you don\'t want.</item>
+        <item>The man who really wants to do something finds a way, the other finds an excuse.</item>
+        <item>We accomplish things by directing our desires, not by ignoring them.</item>
+        <item>Real leaders are ordinary people with extraordinary determination.</item>
+        <item>Faithful friends are gifts from heaven: Whoever finds one has found a treasure.</item>
+        <item>Humor is a whisper from the soul, imploring mind and body to relax, let go and be at peace again.</item>
+        <item>Anyone who thinks the sky is the limit, has limited imagination.</item>
+        <item>The time to be happy is now. The place to be happy is here. The way to be happy is to make others so.</item>
+
+    </string-array>
+</resources>

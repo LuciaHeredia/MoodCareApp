@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Fragments_Search.Report">
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="380dp"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        tools:context=".Fragments_Search.ByMood"
+        android:layout_gravity="center"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="6"
+        android:shadowColor="@color/colorBlack"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="@string/choose_mood"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textMood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorLightBlue"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp">
+
+        <Button
+            android:id="@+id/love"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/mood_love"
+            android:layout_marginEnd="15dp"
+            tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/peaceful"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_peaceful"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/happy"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_happy"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/good"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/mood_good"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="155dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="65dp">
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_ok"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/meh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_meh"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/sad"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_sad"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="230dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp">
+
+            <Button
+                android:id="@+id/angry"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_angry"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/awful"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_awful"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/annoyed"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_annoyed"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/tired"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/mood_tired"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/showMe"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:shadowDx="5"
+            android:layout_marginTop="140dp"
+            android:shadowDy="5"
+            android:shadowRadius="6"
+            android:text="@string/show_me"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+<FrameLayout
+android:id="@+id/fragment_container"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+</FrameLayout>
+
+</RelativeLayout>

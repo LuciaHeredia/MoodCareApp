@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Fragments_Search.Report">
+
+    <FrameLayout
+    android:layout_width="300dp"
+    android:layout_height="520dp"
+    android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+    android:background="@color/transparent"
+    tools:context=".Fragments_Search.ByMood"
+    android:layout_gravity="center"
+    android:shadowDx="5"
+    android:shadowDy="5"
+    android:shadowRadius="6"
+    android:shadowColor="@color/colorBlack"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:text="@string/choose_activity"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorLightBlue"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="65dp">
+
+            <Button
+                android:id="@+id/meTime"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_me"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/friends"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_friends"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/family"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_family"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="155dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp">
+
+            <Button
+                android:id="@+id/date"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_date"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/study"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_study"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/work"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_work"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/sick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/act_sick"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="230dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="65dp">
+
+            <Button
+                android:id="@+id/workout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_workout"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/party"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_party"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/travel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_travel"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row4"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="305dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp">
+
+            <Button
+                android:id="@+id/eating"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_eating"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/cleaning"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_cleaning"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/shopping"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_shopping"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/reading"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/act_reading"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row5"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="380dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="65dp">
+
+            <Button
+                android:id="@+id/sleeping"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_sleeping"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/movie"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_movie"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/other"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/act_other"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/showMe"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:shadowDx="5"
+        android:layout_marginTop="215dp"
+        android:shadowDy="5"
+        android:shadowRadius="6"
+        android:text="@string/show_me"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</FrameLayout>
+
+<FrameLayout
+android:id="@+id/fragment_container"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+</FrameLayout>
+
+</RelativeLayout>

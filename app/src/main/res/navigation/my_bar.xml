@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_bar"
+    app:startDestination="@id/searchScreen"
+    tools:ignore="UnusedNavigation">
+
+    <activity
+        android:id="@+id/searchScreen"
+        android:name="com.example.moodcare.SearchScreen"
+        android:label="activity_search"
+        tools:layout="@layout/activity_search" />
+    <activity
+        android:id="@+id/newEntryScreen"
+        android:name="com.example.moodcare.NewEntryScreen"
+        android:label="activity_new_entry"
+        tools:layout="@layout/activity_new_entry" />
+    <activity
+        android:id="@+id/mainScreen"
+        android:name="com.example.moodcare.MainScreen"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+
+</navigation>

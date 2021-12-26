@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SearchScreen">
+
+    <LinearLayout
+        android:id="@+id/wrapAll"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:text="@string/calendar_text"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioReport"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioDay"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:checked="false"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/day"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radioMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:checked="true"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/month"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/warning"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="@string/if_month_selected"
+            android:textAlignment="center"
+            android:textColor="@color/colorYellow"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/register_btn_wrapper"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/transparent2"
+            android:layout_height="wrap_content">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="fill_parent"
+            android:layout_height="355dp"
+            android:minDate="07/01/2020"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="@string/search_by"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioBy"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioMood"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:textSize="20sp"
+            android:text="@string/mood"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-condensed" />
+
+        <RadioButton
+            android:id="@+id/radioActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/activity" />
+
+        <RadioButton
+            android:id="@+id/radioDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:checked="true"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/byDefault"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/continueSearch"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="6"
+            android:text="@string/continue_string"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomNav"
+        app:menu="@menu/bottom_menu">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <FrameLayout
+        android:id="@+id/fragment_container_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>

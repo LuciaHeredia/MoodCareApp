@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "593490136310",
+    "firebase_url": "https://moodcare-5403f.firebaseio.com",
+    "project_id": "moodcare-5403f",
+    "storage_bucket": "moodcare-5403f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593490136310:android:8b25406dc6f1f4e30170d7",
+        "android_client_info": {
+          "package_name": "com.example.moodcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593490136310-9v0o9f0mffn97cqc1al2o4lov06gjibn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtJGGBz35NqSvp__pMl1Z5WrDpEE4-PNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593490136310-9v0o9f0mffn97cqc1al2o4lov06gjibn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

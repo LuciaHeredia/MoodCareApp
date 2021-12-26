@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Fragments_NewEntry.PickDay">
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="255dp"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorBlack"
+        tools:context=".Fragments_Search.ByMood"
+        android:layout_gravity="center"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="6"
+        android:shadowColor="@color/colorBlack"
+        tools:visibility="visible">
+
+        <Button
+        android:id="@+id/today"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:shadowDx="5"
+        android:layout_marginTop="40dp"
+        android:shadowDy="5"
+        android:shadowRadius="6"
+        android:text="@string/today"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/yesterday"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-black"
+            android:shadowDx="5"
+            android:layout_marginTop="100dp"
+            android:shadowDy="5"
+            android:shadowRadius="6"
+            android:text="@string/yesterday"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/other"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-black"
+            android:shadowDx="5"
+            android:layout_marginTop="160dp"
+            android:shadowDy="5"
+            android:shadowRadius="6"
+            android:text="@string/other_day"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>

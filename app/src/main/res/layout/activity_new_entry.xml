@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@drawable/background"
+    tools:context=".NewEntryScreen"
+    tools:ignore="ScrollViewCount">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/intro"
+        android:paddingBottom="50dp">
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="80dp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/date_format"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="80dp" />
+
+    <TextView
+        android:id="@+id/hourText"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="220dp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/time_format"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="220dp" />
+
+        <Button
+            android:id="@+id/changeTime"
+            android:layout_width="65dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="305dp"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="6"
+            android:text="@string/change"
+            android:textSize="10sp"
+            tools:ignore="ButtonStyle,SmallSp"
+            android:layout_marginStart="305dp" />
+
+        <LinearLayout
+        android:id="@+id/mood"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:layout_width="300dp"
+        android:layout_height="310dp">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="@string/what_s_your_mood"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textMood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorLightBlue"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/moodRow1"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp">
+
+            <Button
+                android:id="@+id/love"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_love"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/peaceful"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_peaceful"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/happy"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_happy"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/good"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/mood_good"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moodRow2"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="65dp">
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_ok"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/meh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_meh"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/sad"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_sad"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moodRow3"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp">
+
+            <Button
+                android:id="@+id/angry"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_angry"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/awful"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_awful"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/annoyed"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/mood_annoyed"
+                android:layout_marginEnd="15dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/tired"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/mood_tired"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity"
+            android:orientation="vertical"
+            android:layout_marginTop="450dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transparent"
+            android:layout_width="300dp"
+            android:layout_height="460dp">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:text="@string/what_s_the_activity"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorLightBlue"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/activityRow1"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginLeft="65dp">
+
+                <Button
+                    android:id="@+id/meTime"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_me"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/friends"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_friends"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/family"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_family"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activityRow2"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp">
+
+                <Button
+                    android:id="@+id/date"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_date"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/study"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_study"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/work"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_work"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/sick"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/act_sick"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activityRow3"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginLeft="65dp">
+
+                <Button
+                    android:id="@+id/workout"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_workout"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/party"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_party"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/travel"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_travel"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activityRow4"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp">
+
+                <Button
+                    android:id="@+id/eating"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_eating"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/cleaning"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_cleaning"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/shopping"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_shopping"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/reading"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/act_reading"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activityRow5"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginLeft="65dp">
+
+                <Button
+                    android:id="@+id/sleeping"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_sleeping"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/movie"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_movie"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/other"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/act_other"
+                    android:layout_marginEnd="15dp"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notes"
+            android:orientation="vertical"
+            android:layout_marginTop="950dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transparent"
+            android:layout_width="300dp"
+            android:layout_height="400dp">
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:text="@string/tell_us_more"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/words"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:background="@color/transparent2"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:hint="@string/type_here"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveEntry"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/notes"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/save_button"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

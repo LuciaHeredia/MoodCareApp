@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sea"
+    tools:context=".SignLogResScreen">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="35dp"
+        android:layout_height="80dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/colorBlack"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="6"
+        android:textColor="@color/colorLightBlue"
+        android:text="@string/moodcare"
+        android:textAlignment="center"
+        android:textSize="70sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/register_btn_wrapper"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/sign"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/sign" />
+
+        <Button
+            android:id="@+id/log"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/log"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="6"
+            android:text="@string/forgot"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/res"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/res" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>

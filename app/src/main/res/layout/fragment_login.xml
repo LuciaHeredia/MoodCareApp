@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@drawable/sea"
+    tools:context=".Fragments_SignLogRes.LogIn"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="35dp"
+        android:layout_height="80dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/colorBlack"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="6"
+        android:textColor="@color/colorLightBlue"
+        android:text="@string/moodcare"
+        android:textAlignment="center"
+        android:textSize="70sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="6"
+        android:text="@string/log"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:autofillHints=""
+        android:hint="@string/enter_email"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:layout_marginTop="320dp"
+        android:layout_gravity="center_horizontal"
+        android:autofillHints=""
+        android:hint="@string/enter_password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:shadowDx="5"
+        android:layout_marginTop="180dp"
+        android:shadowDy="5"
+        android:shadowRadius="6"
+        android:text="@string/enter_button"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:visibility="invisible" />
+
+</FrameLayout>

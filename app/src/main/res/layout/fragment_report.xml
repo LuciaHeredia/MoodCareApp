@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Fragments_Search.Report">
+
+    <TextView
+        android:id="@+id/textReport"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textReport"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_marginTop="130dp"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="470dp">
+
+    </ListView>
+
+        <TextView
+            android:id="@+id/reports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+</RelativeLayout>
