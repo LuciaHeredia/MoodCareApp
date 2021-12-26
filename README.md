@@ -1,5 +1,8 @@
 # MoodCareApp
 
+
+Final project in an app development course. <br />
+
 ## App description:
 <img src = "AppPictures/entry page.png">
 
