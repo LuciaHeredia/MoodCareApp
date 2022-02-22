@@ -1,6 +1,6 @@
 # MoodCareApp
 
-
+MoodCare App in Java, Android Studio.<br />
 Final project in an app development course. <br />
 
 ## App description:
