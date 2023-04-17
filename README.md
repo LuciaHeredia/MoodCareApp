@@ -11,6 +11,7 @@ The app uses Firebase Authentication for the registration and Firebase Realtime 
 <img src = "AppPictures/entry page.png">
 <img src = "AppPictures/features.png">
 
-## App created with:
+## Created with:
+* Android studio: Java.
 * Android version: 11
 * SDK version: 30
